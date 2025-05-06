@@ -2,7 +2,7 @@ const gallery = document.getElementById("gallery");
 
 async function loadGallery() {
   try {
-    const res = await fetch("http://localhost:3000/art");
+    const res = await fetch("https://artgallary-production.up.railway.app/art");
     if (!res.ok) throw new Error("Failed to load artworks");
     
     const arts = await res.json();

@@ -7,7 +7,7 @@ const blurbEl = document.getElementById("blurb");
 
 async function loadArt() {
   try {
-    const res = await fetch(`http://localhost:3000/art`);
+    const res = await fetch(`https://artgallary-production.up.railway.app/art`);
     if (!res.ok) throw new Error("Failed to load artwork");
 
     const arts = await res.json();
