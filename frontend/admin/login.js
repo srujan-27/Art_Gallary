@@ -9,12 +9,9 @@ async function login() {
     }
   
     try {
-      const res = await fetch("https://artgallary-production.up.railway.app/login", {
+      const res = await fetch("https://artgallary-production.up.railway.app/", {
         method: "POST",
-        headers: {git add .
-          git commit -m "Updated frontend to use live Railway backend"
-          git push
-          
+        headers: {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({ username, password })
