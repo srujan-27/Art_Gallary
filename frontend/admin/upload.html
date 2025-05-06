@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upload New Art</title>
+  
+</head>
+<body>
+
+<div class="upload-container">
+  <h1>Upload New Art</h1>
+  <input type="text" id="title" placeholder="Art Title">
+  <textarea id="blurb" placeholder="Art Blurb"></textarea>
+  <input type="file" id="image">
+  <button onclick="uploadArt()">Upload</button>
+  <div class="error" id="error"></div>
+  <div class="success" id="success"></div>
+</div>
+
+<script src="upload.js"></script>
+</body>
+</html>
